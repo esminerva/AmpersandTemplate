@@ -41,3 +41,9 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Project files to ignore
+.idea
+node_modules
+client/templates.js
+npm-debug.log
