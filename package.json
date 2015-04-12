@@ -2,10 +2,21 @@
   "name": "ampersand-template",
   "author": "Yi-An Chang",
   "version": "0.0.0",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "templatize": "templatizer -d client/templates/**/*.jade -o /client/templates.js"
+    "templatize": "templatizer -d client/templates/**/*.jade -o /client/templates.js",
+    "browserify": "browserify -o ./"
   },
+  "broswerify:": {
+    "output": "./public/javascripts",
+    "entry": "./client/app",
+    "ignore": "",
+    "exclude": "",
+    "external": "",
+    ""
+  },
+
   "dependencies": {
     "body-parser": "^1.4.3",
     "compression": "^1.0.8",
@@ -27,6 +38,7 @@
     "ampersand-router": "^1.0.1",
     "ampersand-view": "^7.0.1",
     "ampersand-view-switcher": "^1.0.2",
+    "browserify": "",
     "clientconfig": "^1.0.0",
     "domify": "^1.3.0",
     "domready": "^1.0.5",
