@@ -47,3 +47,4 @@ Temporary Items
 node_modules
 client/templates.js
 npm-debug.log
+public/javascripts/app.bundle.js
