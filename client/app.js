@@ -3,8 +3,6 @@ var _ = require('underscore');
 var config = require('clientconfig');
 var Router = require('./router');
 var MainView = require('./views/main');
-var Me = require('./models/me');
-var People = require('./models/persons');
 var domReady = require('domready');
 
 // attach our app to `window` so we can

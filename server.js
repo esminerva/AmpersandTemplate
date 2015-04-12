@@ -17,6 +17,7 @@ var fixPath = function (pathString) {
 // -----------------
 // Configure express
 // -----------------
+app.use(express.static(fixPath('public')));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
